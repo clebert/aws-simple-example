@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "dist/bff"
+  },
+  "include": ["src/bff/index.ts"]
+}
