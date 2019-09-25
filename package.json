@@ -13,7 +13,7 @@
     "predeploy": "run-s build",
     "deploy": "cdk deploy --app 'yarn aws-simple create' --profile clebert",
     "postdeploy": "aws-simple upload --profile clebert --region eu-central-1",
-    "format": "prettier --write '**/*.{js,json,md,ts,yml}'",
+    "format": "prettier --write '**/*.{js,json,md,ts,tsx,yml}'",
     "lint": "tslint --project . --format stylish",
     "start": "run-p start:*",
     "start:app-watcher": "parcel watch src/app/index.html --out-dir dist/app --public-url /assets",
