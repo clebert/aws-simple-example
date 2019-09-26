@@ -19,7 +19,7 @@ function App(): JSX.Element {
     });
   }, []);
 
-  return <span>{text}</span>;
+  return <h1>{text}</h1>;
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
