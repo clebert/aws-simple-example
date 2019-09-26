@@ -11,7 +11,7 @@
     "postbuild": "tsc -P tsconfig.bff.json",
     "compile": "tsc --noEmit",
     "predeploy": "run-s build",
-    "deploy": "cdk deploy --app 'yarn aws-simple create' --profile clebert",
+    "deploy": "cdk deploy --app 'yarn aws-simple create' --profile clebert --require-approval never",
     "postdeploy": "aws-simple upload --profile clebert --region eu-central-1",
     "format": "prettier --write '**/*.{js,json,md,ts,tsx,yml}'",
     "lint": "tslint --project . --format stylish",
