@@ -2,7 +2,7 @@
 
 ![][ci-badge]
 
-TODO
+A Parcel+React+TypeScript project to demonstrate the use of `aws-simple`.
 
 ---
 
