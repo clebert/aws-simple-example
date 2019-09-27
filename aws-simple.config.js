@@ -1,11 +1,11 @@
 // @ts-check
 
 /**
- * @type {import('aws-simple').StackConfig}
+ * @type {import('aws-simple').AppConfig}
  */
 exports.default = {
   appName: 'aws-simple-example',
-  stackId: 'prod',
+  stackName: 'prod',
   customDomainConfig: {
     certificateArn: process.env.CERTIFICATE_ARN,
     hostedZoneId: process.env.HOSTED_ZONE_ID,

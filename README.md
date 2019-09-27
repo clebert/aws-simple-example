@@ -12,13 +12,12 @@ text from a Lambda BFF (Backend for Frontend) using a `React.useEffect` hook and
 displays it. Parcel is used for bundling and TypeScript as language. You can see
 the deployed website [here][website].
 
-The following [`aws-simple.config.js`][aws-simple-config] file can be used as a
-template for your own Parcel project:
+The following app config can be used as a template for your own Parcel project:
 
 ```js
 exports.default = {
   appName: 'aws-simple-example',
-  stackId: 'prod',
+  stackName: 'prod',
   customDomainConfig: {
     certificateArn: process.env.CERTIFICATE_ARN,
     hostedZoneId: process.env.HOSTED_ZONE_ID,
