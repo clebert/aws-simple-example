@@ -8,9 +8,9 @@ A Parcel+React+TypeScript project to demonstrate the use of
 ## Description
 
 Essentially, this example project consists of a React component that retrieves
-text from a Lambda BFF (Backend for Frontend) using a `React.useEffect` hook and
-displays it. Parcel is used for bundling and TypeScript as language. You can see
-the deployed website [here][website].
+text from a Lambda function using a `React.useEffect` hook and displays it.
+Parcel is used for bundling and TypeScript as language. You can see the deployed
+website [here][website].
 
 The following app config can be used as a template for your own Parcel project:
 
