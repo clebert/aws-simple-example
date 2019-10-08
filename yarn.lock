@@ -1509,10 +1509,10 @@ aws-sign2@~0.7.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
-aws-simple@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.6.tgz#ab91706b42add10aa2655440f8234838f2efe0ab"
-  integrity sha512-tKuKqVxYeCPlGNFHxAPZWW48ij5jXHAJv00Mv5O9nWbtI2BTqq85qCw8XFU3a4eLmcfjIxxWlNq26L2xHq+fhA==
+aws-simple@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.7.tgz#115a6ff4e3b9e60c3e37948da78f33805762c34b"
+  integrity sha512-2P4zXQNB62vk6zz/Ct1fh3a5ch71wq1Mu7+cgw9aSEeop4cIBmutlQFlEoYE2bWgi8kHxW+bvR7vOHVwNjO57Q==
   dependencies:
     "@aws-cdk/assets" "^1.9.0"
     "@aws-cdk/aws-apigateway" "^1.9.0"
@@ -1540,7 +1540,9 @@ aws-simple@^0.0.6:
     "@aws-cdk/region-info" "^1.9.0"
     aws-cdk "^1.9.0"
     aws-sdk "^2.535.0"
+    chalk "^2.4.2"
     chokidar "^3.1.1"
+    cliui "^5.0.0"
     compression "^1.7.4"
     express "^4.17.1"
     lambda-local "^1.6.3"
