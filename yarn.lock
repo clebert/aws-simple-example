@@ -1514,10 +1514,10 @@ aws-sign2@~0.7.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
-aws-simple@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.9.tgz#d4e6ff3ed8513bdb085175b7a90592da991f3424"
-  integrity sha512-uRGz2u+liUzrq72GlEuIu4GINJbwQbd8nyXP749sRXNQEek6Ny0cTm0uerJ3kjaTxxy2+XNjZMA045XnFnpFSQ==
+aws-simple@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.10.tgz#69686eab0340c5b0d182e214a4e647d8e5174443"
+  integrity sha512-/0LryQoRspWPvPJ3spNPj/1RK/mzCEBanmQ3daV3pspArazyD2WjYbxKAcO5XZ61oPLKpdeYkwlepKbIK39Emw==
   dependencies:
     "@aws-cdk/assets" "^1.9.0"
     "@aws-cdk/aws-apigateway" "^1.9.0"
