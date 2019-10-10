@@ -14,7 +14,7 @@ exports.default = {
     getAliasRecordName: stackName =>
       `aws-simple-example${stackName === 'prod' ? '' : `-${stackName}`}`
   },
-  minimumCompressionSize: 1000,
+  minimumCompressionSizeInBytes: 1000,
   loggingLevel: 'INFO',
   lambdaConfigs: [
     {
