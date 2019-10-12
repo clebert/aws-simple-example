@@ -1531,10 +1531,10 @@ aws-sign2@~0.7.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
-aws-simple@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.12.tgz#183e02c05c76116d91e24e59064524daf50b62d4"
-  integrity sha512-kMW21jCBIvHBdr39QG/9gaNeTyGk98LueqB2iFLf/y/c9O/3JGOZpT5EcP2DsVEXFQtdkWheuFL+jH4dp7/eYg==
+aws-simple@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.14.tgz#65b7d4aab76ee3adbc3459a89950d798784a8a70"
+  integrity sha512-Im74o/FnqCP5idywBah0go3TcGqUXXryjyCdpFeaLciN2agnsqSySQmubXEab5tLHy1/WR2pi61wyP9Lj5nF/A==
   dependencies:
     "@aws-cdk/assets" "^1.12.0"
     "@aws-cdk/aws-apigateway" "^1.12.0"
@@ -1567,6 +1567,7 @@ aws-simple@^0.0.12:
     compose-function "^3.0.3"
     compression "^1.7.4"
     express "^4.17.1"
+    get-port "^5.0.0"
     lambda-local "^1.6.3"
     listr "^0.14.3"
     mime-types "^2.1.24"
@@ -3433,6 +3434,13 @@ get-port@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-3.2.0.tgz#dd7ce7de187c06c8bf353796ac71e099f0980ebc"
   integrity sha1-3Xzn3hh8Bsi/NTeWrHHgmfCYDrw=
+
+get-port@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/get-port/-/get-port-5.0.0.tgz#aa22b6b86fd926dd7884de3e23332c9f70c031a6"
+  integrity sha512-imzMU0FjsZqNa6BqOjbbW6w5BivHIuQKopjpPqcnx0AVHJQKCxK1O+Ab3OrVXhrekqfVMjwA9ZYu062R+KcIsQ==
+  dependencies:
+    type-fest "^0.3.0"
 
 get-uri@^2.0.0:
   version "2.0.3"
@@ -7052,6 +7060,11 @@ type-check@~0.3.2:
   integrity sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
   dependencies:
     prelude-ls "~1.1.2"
+
+type-fest@^0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
+  integrity sha512-cUGJnCdr4STbePCgqNFbpVNCepa+kAVohJs1sLhxzdH+gnEoOd8VhbYa7pD3zZYGiURWM2xzEII3fQcRizDkYQ==
 
 type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"
