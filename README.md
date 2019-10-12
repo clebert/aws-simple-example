@@ -1,16 +1,16 @@
 # aws-simple-example
 
-![][ci-badge]
+![](https://github.com/clebert/aws-simple-example/workflows/CI/badge.svg)
 
 A Parcel+React+TypeScript app to demonstrate the use of
-[`aws-simple`][aws-simple].
+[`aws-simple`](https://github.com/clebert/aws-simple).
 
 ## Description
 
 Essentially, this example app consists of a React component that retrieves text
 from a Lambda function using a `React.useEffect` hook and displays it. Parcel is
 used for bundling and TypeScript as language. You can see the deployed website
-[here][website].
+[here](https://aws-simple-example.clebert.io/).
 
 The following app config can be used as a template for your own Parcel app:
 
@@ -18,7 +18,6 @@ The following app config can be used as a template for your own Parcel app:
 exports.default = {
   appName: 'aws-simple-example',
   defaultStackName: 'prod',
-  region: 'eu-central-1',
   customDomainConfig: {
     certificateArn: process.env.CERTIFICATE_ARN,
     hostedZoneId: process.env.HOSTED_ZONE_ID,
@@ -58,12 +57,5 @@ exports.default = {
 
 ---
 
-Copyright (c) 2019, Clemens Akens. Released under the terms of the [MIT
-License][license].
-
-[aws-simple]: https://github.com/clebert/aws-simple
-[aws-simple-config]:
-  https://github.com/clebert/aws-simple-example/blob/master/aws-simple.config.js
-[ci-badge]: https://github.com/clebert/aws-simple-example/workflows/CI/badge.svg
-[license]: https://github.com/clebert/aws-simple-example/blob/master/LICENSE
-[website]: https://aws-simple-example.clebert.io/
+Copyright (c) 2019, Clemens Akens. Released under the terms of the
+[MIT License](https://github.com/clebert/aws-simple-example/blob/master/LICENSE).

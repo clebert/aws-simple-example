@@ -6,7 +6,6 @@
 exports.default = {
   appName: 'aws-simple-example',
   defaultStackName: 'prod',
-  region: 'eu-central-1',
   customDomainConfig: {
     certificateArn: process.env.CERTIFICATE_ARN,
     hostedZoneId: process.env.HOSTED_ZONE_ID,
