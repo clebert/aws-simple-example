@@ -15,15 +15,24 @@ used for bundling and TypeScript as language. You can see the deployed website
 The following app config can be used as a template for your own Parcel app:
 
 ```js
+// @ts-check
+
+const appVersion = process.env.APP_VERSION || 'prod';
+
+/**
+ * @type {import('aws-simple').AppConfig}
+ */
 exports.default = {
-  appName: 'aws-simple-example',
-  defaultStackName: 'prod',
+  appName: 'AwsSimpleExample',
+  appVersion,
   customDomainConfig: {
     certificateArn: process.env.CERTIFICATE_ARN,
     hostedZoneId: process.env.HOSTED_ZONE_ID,
     hostedZoneName: 'clebert.io',
-    getAliasRecordName: stackName =>
-      `aws-simple-example${stackName === 'prod' ? '' : `-${stackName}`}`
+    aliasRecordName:
+      appVersion === 'prod'
+        ? 'aws-simple-example'
+        : `aws-simple-example-${appVersion}`
   },
   minimumCompressionSizeInBytes: 1000,
   loggingLevel: 'INFO',
@@ -48,7 +57,7 @@ exports.default = {
       publicPath: '/assets',
       localPath: 'dist/app',
       responseHeaders: {
-        cacheControl: 'max-age=157680000' // 5 years
+        cacheControl: `max-age=${5 * 365 * 24 * 60 * 60}` // 5 years
       }
     }
   ]
