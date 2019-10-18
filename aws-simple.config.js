@@ -1,21 +1,20 @@
 // @ts-check
 
+const appName = 'aws-simple-example';
 const appVersion = process.env.APP_VERSION || 'prod';
 
 /**
  * @type {import('aws-simple').AppConfig}
  */
 exports.default = {
-  appName: 'AwsSimpleExample',
+  appName,
   appVersion,
   customDomainConfig: {
     certificateArn: process.env.CERTIFICATE_ARN,
     hostedZoneId: process.env.HOSTED_ZONE_ID,
     hostedZoneName: 'clebert.io',
     aliasRecordName:
-      appVersion === 'prod'
-        ? 'aws-simple-example'
-        : `aws-simple-example-${appVersion}`
+      appVersion === 'prod' ? appName : `${appName}-${appVersion}`
   },
   minimumCompressionSizeInBytes: 1000,
   loggingLevel: 'INFO',
