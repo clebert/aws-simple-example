@@ -9,38 +9,40 @@ const appVersion = process.env.APP_VERSION || 'prod';
 exports.default = {
   appName,
   appVersion,
-  customDomainConfig: {
-    certificateArn: process.env.CERTIFICATE_ARN,
-    hostedZoneId: process.env.HOSTED_ZONE_ID,
-    hostedZoneName: 'clebert.io',
-    aliasRecordName:
-      appVersion === 'prod' ? appName : `${appName}-${appVersion}`
-  },
-  minimumCompressionSizeInBytes: 1000,
-  loggingLevel: 'INFO',
-  lambdaConfigs: [
-    {
-      httpMethod: 'GET',
-      publicPath: '/bff',
-      localPath: 'dist/bff/index.js',
-      cachingEnabled: true,
-      cacheTtlInSeconds: 60
-    }
-  ],
-  s3Configs: [
-    {
-      type: 'file',
-      publicPath: '/',
-      localPath: 'dist/app/index.html',
-      bucketPath: 'index.html'
+  createStackConfig: () => ({
+    customDomainConfig: {
+      certificateArn: process.env.CERTIFICATE_ARN,
+      hostedZoneId: process.env.HOSTED_ZONE_ID,
+      hostedZoneName: 'clebert.io',
+      aliasRecordName:
+        appVersion === 'prod' ? appName : `${appName}-${appVersion}`
     },
-    {
-      type: 'folder',
-      publicPath: '/assets',
-      localPath: 'dist/app',
-      responseHeaders: {
-        cacheControl: `max-age=${5 * 365 * 24 * 60 * 60}` // 5 years
+    minimumCompressionSizeInBytes: 1000,
+    loggingLevel: 'INFO',
+    lambdaConfigs: [
+      {
+        httpMethod: 'GET',
+        publicPath: '/bff',
+        localPath: 'dist/bff/index.js',
+        cachingEnabled: true,
+        cacheTtlInSeconds: 60
       }
-    }
-  ]
+    ],
+    s3Configs: [
+      {
+        type: 'file',
+        publicPath: '/',
+        localPath: 'dist/app/index.html',
+        bucketPath: 'index.html'
+      },
+      {
+        type: 'folder',
+        publicPath: '/assets',
+        localPath: 'dist/app',
+        responseHeaders: {
+          cacheControl: `max-age=${5 * 365 * 24 * 60 * 60}` // 5 years
+        }
+      }
+    ]
+  })
 };
