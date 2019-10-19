@@ -42,7 +42,7 @@ exports.default = {
         publicPath: '/bff',
         localPath: 'dist/bff/index.js',
         cachingEnabled: true,
-        cacheTtlInSeconds: 60
+        cacheTtlInSeconds: 3600
       }
     ],
     s3Configs: [
