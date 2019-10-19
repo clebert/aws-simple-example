@@ -1506,10 +1506,10 @@ aws-sign2@~0.7.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
-aws-simple@^0.0.21:
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.21.tgz#a6feedf2982da3ab7784021208fbd24b03f97974"
-  integrity sha512-WiUPchmPG/OXn90KZuD0hVNYhJZ9m/n2ZGr8z9ZPMq4FQER51XH5RwIX37cU2LpOvwy0GlGv52vTwUM8df/F/A==
+aws-simple@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/aws-simple/-/aws-simple-0.0.22.tgz#1ce8a09f1a2c1cc2bc8a80a6bfe9fec9e05fcf28"
+  integrity sha512-EndeqjR69siVkQWpMsvfeUn4VQ82/LhEvbLf8Ol38xdCKOjI0GodUW0/f1mubdGuYFotvzdA0RqeeU3ZLnqUqQ==
   dependencies:
     "@aws-cdk/assets" "^1.12.0"
     "@aws-cdk/aws-apigateway" "^1.12.0"
@@ -1551,6 +1551,7 @@ aws-simple@^0.0.21:
     prettier "^1.18.2"
     prompts "^2.2.1"
     react "^16.10.2"
+    signal-exit "^3.0.2"
     source-map-support "^0.5.13"
     url-join "^4.0.1"
     yargs "^14.2.0"
