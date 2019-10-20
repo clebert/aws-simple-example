@@ -57,6 +57,8 @@ exports.default = {
         publicPath: '/assets',
         localPath: 'dist/app',
         responseHeaders: {
+          // Since the assets have a fingerprint, they can be cached permanently
+          // in the browser.
           cacheControl: `max-age=${5 * 365 * 24 * 60 * 60}` // 5 years
         }
       }
