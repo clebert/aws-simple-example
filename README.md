@@ -41,7 +41,7 @@ exports.default = {
         httpMethod: 'GET',
         publicPath: '/bff',
         localPath: 'dist/bff/index.js',
-        resourceName: 'bff',
+        description: 'BFF',
         cachingEnabled: true,
         cacheTtlInSeconds: 3600
       }
