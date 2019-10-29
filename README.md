@@ -41,9 +41,7 @@ exports.default = {
         httpMethod: 'GET',
         publicPath: '/bff',
         localPath: 'dist/bff/index.js',
-        description: 'BFF',
-        cachingEnabled: true,
-        cacheTtlInSeconds: 3600
+        description: 'BFF'
       }
     ],
     s3Configs: [
@@ -61,7 +59,9 @@ exports.default = {
           // Since the assets have a fingerprint, they can be cached permanently
           // in the browser.
           cacheControl: `max-age=${5 * 365 * 24 * 60 * 60}` // 5 years
-        }
+        },
+        cachingEnabled: true,
+        cacheTtlInSeconds: 3600
       }
     ]
   })
