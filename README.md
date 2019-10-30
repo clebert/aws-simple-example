@@ -18,7 +18,7 @@ The following app config can be used as a template for your own Parcel app:
 // @ts-check
 
 const appName = 'aws-simple-example';
-const appVersion = process.env.APP_VERSION || 'prod';
+const appVersion = process.env.APP_VERSION || 'latest';
 
 /**
  * @type {import('aws-simple').AppConfig}
@@ -32,16 +32,16 @@ exports.default = {
       hostedZoneId: process.env.HOSTED_ZONE_ID,
       hostedZoneName: 'clebert.io',
       aliasRecordName:
-        appVersion === 'prod' ? appName : `${appName}-${appVersion}`
+        appVersion === 'latest' ? appName : `${appName}-${appVersion}`
     },
     minimumCompressionSizeInBytes: 1000,
-    loggingLevel: 'INFO',
     lambdaConfigs: [
       {
         httpMethod: 'GET',
         publicPath: '/bff',
         localPath: 'dist/bff/index.js',
-        description: 'BFF'
+        description: 'BFF',
+        loggingLevel: 'INFO'
       }
     ],
     s3Configs: [
