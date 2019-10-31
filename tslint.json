@@ -1,6 +1,0 @@
-{
-  "extends": ["ts-config"],
-  "rules": {
-    "no-implicit-dependencies": [true, ["aws-lambda"]]
-  }
-}
